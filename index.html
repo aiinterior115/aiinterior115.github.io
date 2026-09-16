@@ -1,79 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="AI Interior — premium interior design, architecture and sintered stone solutions in Dhaka, Bangladesh.">
-<meta name="theme-color" content="#19060a">
-<title>AI Interior | Design Beyond Space</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Invictus Tower | AI Interior</title>
+<meta name="description" content="AI Invictus Tower — premium residential living at North Kalshi, Mirpur DOHS, Dhaka.">
 <style>
-:root{--maroon:#19060a;--maroon2:#2a0810;--wine:#430d19;--gold:#d9ad63;--gold2:#f0d39a;--ivory:#f8f0e8;--muted:#b7a7a5;--line:rgba(217,173,99,.22)}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--maroon);color:var(--ivory);font-family:Inter,Arial,sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}
-.container{width:min(1200px,92%);margin:auto}.nav{position:fixed;z-index:100;top:0;left:0;right:0;background:rgba(25,6,10,.76);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
-.navin{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:2px}.brand img{width:46px;height:46px;object-fit:contain}.brand span{font-size:14px}.brand b{color:var(--gold)}
-.links{display:flex;gap:27px;align-items:center;font-size:13px;color:#e4d9d3}.links a:hover{color:var(--gold)}.navbtn{border:1px solid var(--gold);padding:10px 16px;color:var(--gold)!important}
-.menu{display:none;background:none;border:0;color:var(--ivory);font-size:25px}.mobile{display:none}
-.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:#110307}.hero-art{position:absolute;inset:0;background:url("hero-art.png") center/cover no-repeat;opacity:.48;filter:saturate(1.2)}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 28%,rgba(117,20,43,.5),transparent 34%)}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,6,10,.97),rgba(25,6,10,.72) 43%,rgba(25,6,10,.2)),linear-gradient(0deg,rgba(25,6,10,.96),transparent 48%)}
-.hero-content{position:relative;z-index:2;padding-top:100px;max-width:820px}.eyebrow{font-size:10px;letter-spacing:4px;color:var(--gold);font-weight:800;text-transform:uppercase}.hero h1{font:500 clamp(55px,7.4vw,100px)/.96 Georgia,serif;letter-spacing:-4px;margin:20px 0}.hero h1 span{color:var(--gold)}.lead{font-size:18px;color:#cdbfba;max-width:660px;margin-bottom:35px}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 23px;background:var(--gold);color:#1b080b;font-weight:800;border:1px solid var(--gold)}.btn:hover{background:var(--gold2)}.btn.ghost{background:transparent;color:var(--ivory);border-color:rgba(255,255,255,.28)}
-.hero-meta{position:absolute;z-index:3;bottom:34px;right:4%;font-size:10px;letter-spacing:2px;color:#a69491;text-align:right}.hero-meta strong{display:block;color:var(--gold);font-size:13px;margin-bottom:4px}
-section{padding:105px 0}.dark{background:#21070d}.wine{background:linear-gradient(135deg,#3b0b16,#20070d)}.title{font:500 clamp(38px,5vw,60px)/1.05 Georgia,serif;margin:12px 0 18px}.copy{color:var(--muted);max-width:720px}
-.intro{display:grid;grid-template-columns:1fr .7fr;gap:80px;align-items:end}.quote{border-left:1px solid var(--gold);padding-left:25px;color:#ddd0ca;font:italic 20px/1.5 Georgia,serif}.quote small{display:block;font:normal 10px Arial;letter-spacing:2px;color:var(--gold);margin-top:18px;text-transform:uppercase}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:45px}.service{background:#260811;padding:34px;min-height:285px;transition:.25s}.service:hover{transform:translateY(-5px);background:#310a13}.service .n{color:var(--gold);font-size:11px;letter-spacing:2px}.service h3{font:500 27px Georgia,serif;margin:25px 0 12px}.service p{color:var(--muted);font-size:14px}
-.projects{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin-top:45px}.project{min-height:310px;padding:30px;display:flex;align-items:end;position:relative;overflow:hidden;border:1px solid var(--line);background:linear-gradient(135deg,#4a101d,#21070d)}.project:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent 70%)}.project.large{min-height:525px;background:linear-gradient(135deg,#561324,#20060c)}.project.two{background:linear-gradient(135deg,#35101a,#160509)}.project.three{background:linear-gradient(135deg,#5a291d,#26080e)}.project.four{background:linear-gradient(135deg,#27141b,#130509)}.pcontent{position:relative;z-index:2}.tag{font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase}.project h3{font:500 30px Georgia,serif;margin:6px 0}.project p{font-size:13px;color:#c0b0ad}
-.materials{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}.material-card{padding:40px;border:1px solid var(--line);background:radial-gradient(circle at 75% 20%,rgba(217,173,99,.14),transparent 35%),#280811}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);padding:8px 12px;color:#daccc6;font-size:11px}
-.process{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-top:45px}.step{border-top:1px solid var(--line);padding-top:20px}.step b{color:var(--gold);font-size:11px}.step h4{margin:10px 0 5px;font-size:17px}.step p{font-size:13px;color:var(--muted)}
-.contact{background:linear-gradient(135deg,#4b0c19,#20070d);border-top:1px solid var(--line)}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.details{margin-top:25px}.detail{padding:15px 0;border-bottom:1px solid rgba(255,255,255,.08);color:#ded2cd}.detail small{display:block;color:#9d8887;font-size:9px;letter-spacing:2px;text-transform:uppercase}.detail a{color:var(--gold)}
-.float{position:fixed;right:22px;bottom:22px;z-index:90;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-weight:900;font-size:25px;box-shadow:0 10px 35px rgba(0,0,0,.45)}.float:hover{transform:scale(1.06)}
-footer{padding:30px 0;color:#948482;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px}
-@media(max-width:800px){.links{display:none}.menu{display:block}.mobile{position:absolute;top:82px;left:0;right:0;background:#1d070c;border-bottom:1px solid var(--line);padding:18px 4%;flex-direction:column;gap:16px}.mobile.show{display:flex}.intro,.materials,.contactgrid{grid-template-columns:1fr;gap:35px}.services,.process{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.project.large{min-height:370px}section{padding:78px 0}.hero h1{letter-spacing:-2px}.hero-meta{display:none}}
+:root{--maroon:#6f1025;--deep:#24070f;--gold:#c8a35b;--cream:#f8f3ed;--ink:#241b1e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(36,7,15,.94);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:14px 6%;border-bottom:1px solid rgba(200,163,91,.35)}
+nav .brand{color:#fff;font-weight:700;letter-spacing:2px}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:14px}
+.hero{min-height:92vh;padding-top:75px;display:grid;place-items:center;background:linear-gradient(135deg,#24070f,#6f1025)}
+.hero-inner{width:min(1180px,92%);display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(42px,7vw,78px);line-height:1;color:#fff;margin-bottom:18px}
+.hero h1 span{color:var(--gold)}
+.hero p{color:#f6e9df;font-size:18px;max-width:560px}
+.btn{display:inline-block;margin-top:26px;padding:13px 22px;border-radius:999px;background:var(--gold);color:#24070f;text-decoration:none;font-weight:700}
+.hero img{width:100%;max-height:600px;object-fit:cover;border-radius:22px;box-shadow:0 25px 70px rgba(0,0,0,.35)}
+section{padding:80px 6%}
+.wrap{max-width:1180px;margin:auto}
+.kicker{color:var(--maroon);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:13px}
+h2{font-size:clamp(30px,4vw,48px);color:var(--deep);margin:8px 0 30px}
+.intro{max-width:760px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}
+.card{background:#fff;border:1px solid #eadbd0;border-radius:16px;padding:24px;box-shadow:0 10px 30px rgba(36,7,15,.06)}
+.card strong{display:block;color:var(--maroon);font-size:18px;margin-bottom:5px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.gallery img{width:100%;height:390px;object-fit:cover;border-radius:16px;display:block}
+.gallery .wide{grid-column:span 2;height:520px}
+.plan{background:#fff;border-radius:18px;padding:14px;box-shadow:0 10px 35px rgba(36,7,15,.08)}
+.plan img{width:100%;display:block;border-radius:10px}
+.contact{background:var(--deep);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact p{color:#eadfe0}
+.whatsapp{display:inline-block;margin-top:22px;background:#25d366;color:#fff;text-decoration:none;padding:14px 24px;border-radius:999px;font-weight:700}
+footer{background:#16040a;color:#cdbfc1;text-align:center;padding:20px;font-size:13px}
+@media(max-width:800px){
+nav{padding:12px 4%}nav a{margin-left:10px;font-size:12px}
+.hero-inner{grid-template-columns:1fr;padding:45px 0}
+.features{grid-template-columns:1fr 1fr}
+.gallery{grid-template-columns:1fr}.gallery .wide{grid-column:auto;height:390px}
+}
+@media(max-width:500px){.features{grid-template-columns:1fr}section{padding:60px 5%}}
 </style>
 </head>
 <body>
-<nav class="nav"><div class="container navin">
-<a class="brand" href="#home"><img src="ai-logo.png" alt="AI Interior logo"><span>AI <b>INTERIOR</b></span></a>
-<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#materials">Materials</a><a href="#contact" class="navbtn">Let's Talk</a></div>
-<button class="menu" aria-label="Menu" onclick="document.querySelector('.mobile').classList.toggle('show')">☰</button>
-</div><div class="mobile"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#materials">Materials</a><a href="#contact">Contact</a></div></nav>
+<nav>
+  <div class="brand">AI INVICTUS</div>
+  <div><a href="#about">About</a><a href="#amenities">Amenities</a><a href="#gallery">Gallery</a><a href="#plan">Floor Plan</a><a href="#contact">Contact</a></div>
+</nav>
 
-<header id="home" class="hero"><div class="hero-art"></div><div class="container hero-content">
-<div class="eyebrow">Interior • Architecture • Materials</div>
-<h1>Design beyond <span>space.</span></h1>
-<p class="lead">Premium interior environments, architectural solutions and distinctive surfaces — designed with intention and delivered with detail.</p>
-<div class="actions"><a class="btn" href="#contact">Start a Project →</a><a class="btn ghost" href="#projects">View Our Work</a></div>
-</div><div class="hero-meta"><strong>AI INTERIOR</strong>Dhaka, Bangladesh</div></header>
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="kicker" style="color:#d8b56b">North Kalshi · Mirpur DOHS</div>
+      <h1>AI <span>Invictus</span> Tower</h1>
+      <p>Live elevated. Live iconic. A premium residential address designed around contemporary architecture, greenery and shared spaces.</p>
+      <a class="btn" href="#gallery">Explore the Project</a>
+    </div>
+    <img src="tower.jpg" alt="AI Invictus Tower">
+  </div>
+</header>
 
-<section id="about"><div class="container intro"><div><div class="eyebrow">01 — The Studio</div><h2 class="title">Luxury is in the details.</h2><p class="copy">AI Interior creates sophisticated spaces for modern living and business. Our approach connects concept, proportion, materials and execution into one coherent experience.</p></div><div class="quote">“Good design should look effortless — because every detail was considered.”<small>AI Interior Studio</small></div></div></section>
+<section id="about">
+<div class="wrap">
+  <div class="kicker">The Project</div>
+  <h2>Modern living, thoughtfully designed.</h2>
+  <p class="intro">AI Invictus Tower brings together refined architecture and lifestyle-focused spaces in North Kalshi, Mirpur DOHS. Explore the tower, rooftop amenities, shared spaces and apartment floor plans below.</p>
+  <div class="features">
+    <div class="card"><strong>3 & 4 Bedroom</strong>Contemporary family residences.</div>
+    <div class="card"><strong>Premium Architecture</strong>Distinctive, greenery-integrated façade.</div>
+    <div class="card"><strong>Rooftop Pool</strong>A dedicated elevated leisure space.</div>
+    <div class="card"><strong>Jogging Track</strong>Landscape-focused active living.</div>
+  </div>
+</div>
+</section>
 
-<section id="services" class="dark"><div class="container"><div class="eyebrow">02 — Expertise</div><h2 class="title">What we do.</h2><div class="services">
-<div class="service"><div class="n">01 / INTERIOR</div><h3>Interior Design</h3><p>Residential, office, retail and commercial interiors with tailored layouts, finishes and visual direction.</p></div>
-<div class="service"><div class="n">02 / ARCHITECTURE</div><h3>Architectural Solutions</h3><p>Spatial planning and design solutions balancing identity, usability and practical execution.</p></div>
-<div class="service"><div class="n">03 / SURFACES</div><h3>Sintered Stone</h3><p>Large-format premium surfaces for feature walls, countertops, floors and architectural applications.</p></div>
-</div></div></section>
+<section id="amenities" style="background:#f0e5dd">
+<div class="wrap">
+  <div class="kicker">Lifestyle</div>
+  <h2>Premium amenities</h2>
+  <div class="gallery">
+    <img class="wide" src="amenities.jpg" alt="Rooftop swimming pool and amenities">
+    <img src="shared-spaces.jpg" alt="Shared spaces and landscaped courtyard">
+    <img src="hero.jpg" alt="AI Invictus rooftop aerial view">
+  </div>
+</div>
+</section>
 
-<section id="projects"><div class="container"><div class="eyebrow">03 — Selected Work</div><h2 class="title">Spaces with a point of view.</h2><div class="projects">
-<article class="project large"><div class="pcontent"><div class="tag">Residential Development</div><h3>AI INVICTUS TOWER</h3><p>Mirpur DOHS, Dhaka • Contemporary premium living</p></div></article>
-<article class="project two"><div class="pcontent"><div class="tag">Residential</div><h3>Tailored Living</h3><p>Modern interiors and custom detailing.</p></div></article>
-<article class="project three"><div class="pcontent"><div class="tag">Corporate</div><h3>Workspaces</h3><p>Confident environments for modern businesses.</p></div></article>
-<article class="project four"><div class="pcontent"><div class="tag">Materials</div><h3>Surface Stories</h3><p>Large-format stone applications with architectural impact.</p></div></article>
-</div></div></section>
+<section id="gallery">
+<div class="wrap">
+  <div class="kicker">Gallery</div>
+  <h2>AI Invictus in pictures</h2>
+  <div class="gallery">
+    <img class="wide" src="hero.jpg" alt="AI Invictus aerial view">
+    <img src="tower.jpg" alt="AI Invictus Tower exterior">
+    <img src="shared-spaces.jpg" alt="Shared spaces">
+    <img src="amenities.jpg" alt="Rooftop amenities">
+    <img src="ai-interior-brand-1.png" alt="AI Interior branding">
+    <img src="ai-interior-brand-2.png" alt="AI Interior branding">
+  </div>
+</div>
+</section>
 
-<section id="materials" class="wine"><div class="container materials"><div><div class="eyebrow">04 — Materials</div><h2 class="title">Material makes the mood.</h2><p class="copy">We specify premium surfaces with attention to scale, texture, finish and application. Large-format sintered stone brings a clean architectural character to kitchens, walls and feature areas.</p></div><div class="material-card"><div class="eyebrow">Signature Material</div><h3 class="title" style="font-size:34px">Large-format Sintered Stone</h3><p class="copy">Designed for contemporary interiors where durability and visual impact matter.</p><div class="chips"><span class="chip">Polished</span><span class="chip">Matt</span><span class="chip">Large Format</span><span class="chip">Premium Finish</span></div></div></div></section>
+<section id="plan">
+<div class="wrap">
+  <div class="kicker">Residence Layout</div>
+  <h2>2D Floor Plan</h2>
+  <div class="plan"><img src="floor-plan.jpg" alt="AI Invictus 2D floor plan"></div>
+</div>
+</section>
 
-<section><div class="container"><div class="eyebrow">05 — Process</div><h2 class="title">From idea to finished space.</h2><div class="process">
-<div class="step"><b>01</b><h4>Discover</h4><p>Understand your space, needs and design direction.</p></div>
-<div class="step"><b>02</b><h4>Design</h4><p>Develop layouts, concepts, materials and visual direction.</p></div>
-<div class="step"><b>03</b><h4>Detail</h4><p>Refine specifications and execution requirements.</p></div>
-<div class="step"><b>04</b><h4>Deliver</h4><p>Bring the approved design into a finished space.</p></div>
-</div></div></section>
+<section id="contact" class="contact">
+<div class="wrap">
+  <div class="kicker" style="color:#d8b56b">Enquire Now</div>
+  <h2>Make AI Invictus your next address.</h2>
+  <p>North Kalshi, Mirpur DOHS, Dhaka</p>
+  <a class="whatsapp" href="https://wa.me/8801334923748" target="_blank" rel="noopener">WhatsApp: 01334 923 748</a>
+</div>
+</section>
 
-<section id="contact" class="contact"><div class="container contactgrid"><div><div class="eyebrow">06 — Contact</div><h2 class="title">Let's create something exceptional.</h2><p class="copy">Tell us about your project. We'll help you turn the idea into a clear design direction.</p><br><a class="btn" href="https://wa.me/8801798282810?text=Hello%20AI%20Interior%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank">WhatsApp Us →</a></div><div class="details">
-<div class="detail"><small>Office</small>House-111, AWT Road, North Kalshi, Mirpur DOHS Gate-1, Dhaka-1216, Bangladesh</div>
-<div class="detail"><small>WhatsApp / Phone</small><a href="tel:+8801798282810">+880 1798-282810</a></div>
-<div class="detail"><small>Email</small><a href="mailto:info@aiinterior.com">info@aiinterior.com</a></div>
-</div></div></section>
-
-<footer><div class="container foot"><span>© 2026 AI Interior. All rights reserved.</span><span>Interior • Architecture • Materials</span></div></footer>
-<a class="float" href="https://wa.me/8801798282810?text=Hello%20AI%20Interior%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" aria-label="WhatsApp">◉</a>
-<script>document.querySelectorAll('.mobile a').forEach(a=>a.onclick=()=>document.querySelector('.mobile').classList.remove('show'));</script>
+<footer>© AI Interior · AI Invictus Tower · North Kalshi, Mirpur DOHS</footer>
 </body>
 </html>
