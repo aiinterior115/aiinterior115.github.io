@@ -1,6 +1,6 @@
 // WhatsApp number for the enquiry form, digits only with country code (e.g. 8801XXXXXXXXX).
 // While empty, the form stays hidden so visitors never see a broken button.
-var WHATSAPP_NUMBER = "";
+var WHATSAPP_NUMBER = "8801798282810";
 
 (function () {
   var burger = document.querySelector(".burger"), nav = document.getElementById("nav");
@@ -34,7 +34,7 @@ var WHATSAPP_NUMBER = "";
   var num = WHATSAPP_NUMBER.replace(/\D/g, ""), form = document.getElementById("cform");
   if (num) {
     form.hidden = false;
-    document.getElementById("nocontact").hidden = true;
+    
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var t = "Hello AI INTERIOR, I am " + form.n.value + ". Project: " + form.t.value + ". " + form.m.value;
